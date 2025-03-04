@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8DE0BAA9-61C2-4544-B9E4-4B4154FF4873}</ProjectGuid>
+    <RootNamespace>Transfer_Control</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <ProjectName />
+    <SccProjectName>
+    </SccProjectName>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>D:\Transfer_Program&amp;Config\Bin\</OutDir>
+    <TargetName>$(ProjectName)d</TargetName>
+    <IncludePath>C:\Program Files\Matrox Imaging\Mil\Include\MilDyn;C:\Program Files\Matrox Imaging\Mil\Include;C:\Program Files (x86)\Matrox Imaging\Mil\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\Matrox Imaging\Mil\LIB;C:\Program Files (x86)\Matrox Imaging\Mil\LIB;$(LibraryPath)</LibraryPath>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Common\Control;..\Common;..\System;..\Transfer_Control;..\Hardware-Layer;..\Lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>..\Common\ControlsD.lib;..\Hardware-Layer\ACSCL_x86.LIB;..\Hardware-Layer\UdpLibD.lib;..\Common\ImageView\Lib\ImageObjd.lib;..\Common\ImageView\Lib\XImageViewd.lib;..\Common\ImageView\Lib\XUtild.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Manifest>
+      <VerboseOutput>false</VerboseOutput>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\Common\ImageView\ImageObjd.dll" />
+    <None Include="..\Common\ImageView\XImageViewd.dll" />
+    <None Include="..\Hardware-Layer\Cmmsdk.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Hardware-Layer\UdpLibD.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Hardware-Layer\UdpLibD.ilk">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="a1.txt" />
+    <None Include="aaa.txt" />
+    <None Include="Buffer25.txt" />
+    <None Include="Buffer26.txt" />
+    <None Include="D-Buffer.txt" />
+    <None Include="ReadMe.txt" />
+    <None Include="res\111.bmp" />
+    <None Include="res\bitmap3.bmp" />
+    <None Include="res\buttons.bmp" />
+    <None Include="res\Cam0.bmp" />
+    <None Include="res\Cam1.bmp" />
+    <None Include="res\CamSet1.bmp" />
+    <None Include="res\filelarge.bmp" />
+    <None Include="res\filesmall.bmp" />
+    <None Include="res\ico00001.ico" />
+    <None Include="res\ico00002.ico" />
+    <None Include="res\icon1.ico" />
+    <None Include="res\icon10.ico" />
+    <None Include="res\icon2.ico" />
+    <None Include="res\icon3.ico" />
+    <None Include="res\icon4.ico" />
+    <None Include="res\main.bmp" />
+    <None Include="res\ribbon.mfcribbon-ms" />
+    <None Include="res\Toolbar.bmp" />
+    <None Include="res\Toolbar256.bmp" />
+    <None Include="res\Transfer_Control.ico" />
+    <None Include="res\Transfer_Control.rc2" />
+    <None Include="res\Transfer_ControlDoc.ico" />
+    <None Include="res\writelarge.bmp" />
+    <None Include="res\writesmall.bmp" />
+    <None Include="Rev.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\BCMenu.h" />
+    <ClInclude Include="..\Common\btnenh.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Common\BtnST.h" />
+    <ClInclude Include="..\Common\ComiAXCommon.h" />
+    <ClInclude Include="..\Common\comigraph.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Common\Common_Tool.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Common\Controls\GroupCheck.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Common\Controls\XPGroupBox.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Common\CtrlInclude.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Common\GridCtrl_src\CellRange.h" />
+    <ClInclude Include="..\Common\GridCtrl_src\GridCell.h" />
+    <ClInclude Include="..\Common\GridCtrl_src\GridCellBase.h" />
+    <ClInclude Include="..\Common\GridCtrl_src\GridCtrl.h" />
+    <ClInclude Include="..\Common\GridCtrl_src\GridDropTarget.h" />
+    <ClInclude Include="..\Common\GridCtrl_src\InPlaceEdit.h" />
+    <ClInclude Include="..\Common\GridCtrl_src\MemDC.h" />
+    <ClInclude Include="..\Common\GridCtrl_src\TitleTip.h" />
+    <ClInclude Include="..\Common\ImageView\Include\export.h" />
+    <ClInclude Include="..\Common\ImageView\Include\ImageObj.h" />
+    <ClInclude Include="..\Common\ImageView\Include\IxDeviceContext.h" />
+    <ClInclude Include="..\Common\ImageView\Include\xDataTypes.h" />
+    <ClInclude Include="..\Common\ImageView\Include\xGraphicObject.h" />
+    <ClInclude Include="..\Common\ImageView\Include\xGraphicPrimitive.h" />
+    <ClInclude Include="..\Common\ImageView\Include\xImageScrollView.h" />
+    <ClInclude Include="..\Common\ImageView\Include\xImageViewCtrl.h" />
+    <ClInclude Include="..\Common\MultiViewSplitter.h" />
+    <ClInclude Include="..\Common\MyMsgWnd.h" />
+    <ClInclude Include="..\Common\MyProgressWnd.h" />
+    <ClInclude Include="..\Common\Mywnd.h" />
+    <ClInclude Include="..\Common\OScopeCtrl.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Common\RotTracker.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Common\TrackerInfo.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Common\UserDefine.h" />
+    <ClInclude Include="..\Hardware-Layer\ACSC.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Hardware-Layer\ACS_Motion.h" />
+    <ClInclude Include="..\Hardware-Layer\Cmmsdk.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Hardware-Layer\CmmsdkDef.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Hardware-Layer\ComiAXCommon.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Hardware-Layer\ComiDaqComm.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Hardware-Layer\Comizoa_Class.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Hardware-Layer\Comm.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Hardware-Layer\CommProc.h" />
+    <ClInclude Include="..\Hardware-Layer\IO.h" />
+    <ClInclude Include="..\Hardware-Layer\Matrox.h" />
+    <ClInclude Include="..\Hardware-Layer\Motion.h" />
+    <ClInclude Include="..\Hardware-Layer\Mxtool.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Hardware-Layer\NTM_Control.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Hardware-Layer\Pcomm.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Hardware-Layer\sub.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Hardware-Layer\VisionInfo.h" />
+    <ClInclude Include="..\System\Common_Tool.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\System\Define_Structure.h" />
+    <ClInclude Include="..\System\KIMM_Transfer_Define.h" />
+    <ClInclude Include="..\System\LGE_Transfer_Define.h" />
+    <ClInclude Include="..\System\ParameterFile.h" />
+    <ClInclude Include="..\System\ProcessThread_Main.h" />
+    <ClInclude Include="..\System\SxGroupBox.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\System\SxLogFont.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\System\SystemClass.h" />
+    <ClInclude Include="..\System\SystemInfo.h" />
+    <ClInclude Include="..\System\XLAutomation.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="btnenh.h" />
+    <ClInclude Include="comigraph.h" />
+    <ClInclude Include="dlgAutoRunInfo.h" />
+    <ClInclude Include="dlgData_MotionSpeed.h" />
+    <ClInclude Include="dlgData_MotionStatus.h" />
+    <ClInclude Include="dlgLightControl.h" />
+    <ClInclude Include="dlgManuAlign.h" />
+    <ClInclude Include="dlgManual_IO_Monitor.h" />
+    <ClInclude Include="dlgManuCenter.h" />
+    <ClInclude Include="dlgMarkCopy.h" />
+    <ClInclude Include="dlgModelLoad.h" />
+    <ClInclude Include="dlgModelNameInput.h" />
+    <ClInclude Include="dlgOrigin.h" />
+    <ClInclude Include="dlgPlateStamp_Jog.h" />
+    <ClInclude Include="dlgRecipePrintEdit.h" />
+    <ClInclude Include="dlgRecipeSet.h" />
+    <ClInclude Include="dlgRollForce_Test.h" />
+    <ClInclude Include="dlgSplash.h" />
+    <ClInclude Include="dlgStampInst_Jog.h" />
+    <ClInclude Include="dlgStopModeSel.h" />
+    <ClInclude Include="dlgXZ12_Mat.h" />
+    <ClInclude Include="font.h" />
+    <ClInclude Include="frmAlignView.h" />
+    <ClInclude Include="frmCalibView.h" />
+    <ClInclude Include="frmCameraView.h" />
+    <ClInclude Include="frmCompView.h" />
+    <ClInclude Include="frmDataView.h" />
+    <ClInclude Include="frmDebugView.h" />
+    <ClInclude Include="frmMainView.h" />
+    <ClInclude Include="frmManualView.h" />
+    <ClInclude Include="frmSetupView.h" />
+    <ClInclude Include="frmStampView.h" />
+    <ClInclude Include="frmSubMenuView.h" />
+    <ClInclude Include="frmTeachView.h" />
+    <ClInclude Include="frmTitleView.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MsgDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="surfacecolor.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="textdescriptor.h" />
+    <ClInclude Include="texture.h" />
+    <ClInclude Include="Transfer_Control.h" />
+    <ClInclude Include="Transfer_ControlDoc.h" />
+    <ClInclude Include="Transfer_ControlView.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\BCMenu.cpp" />
+    <ClCompile Include="..\Common\btnenh.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Common\BtnST.cpp" />
+    <ClCompile Include="..\Common\comigraph.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Common\Common_Tool.cpp" />
+    <ClCompile Include="..\Common\GridCtrl_src\GridCell.cpp" />
+    <ClCompile Include="..\Common\GridCtrl_src\GridCellBase.cpp" />
+    <ClCompile Include="..\Common\GridCtrl_src\GridCtrl.cpp" />
+    <ClCompile Include="..\Common\GridCtrl_src\GridDropTarget.cpp" />
+    <ClCompile Include="..\Common\GridCtrl_src\InPlaceEdit.cpp" />
+    <ClCompile Include="..\Common\GridCtrl_src\TitleTip.cpp" />
+    <ClCompile Include="..\Common\MultiViewSplitter.cpp" />
+    <ClCompile Include="..\Common\MyMsgWnd.cpp" />
+    <ClCompile Include="..\Common\MyProgressWnd.cpp" />
+    <ClCompile Include="..\Common\Mywnd.cpp" />
+    <ClCompile Include="..\Common\OScopeCtrl.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Common\RotTracker.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Hardware-Layer\ACS_Motion.cpp" />
+    <ClCompile Include="..\Hardware-Layer\Cmmsdk.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Hardware-Layer\Comizoa_Class.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Hardware-Layer\Comm.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Hardware-Layer\CommProc.cpp" />
+    <ClCompile Include="..\Hardware-Layer\IO.cpp" />
+    <ClCompile Include="..\Hardware-Layer\Matrox.cpp" />
+    <ClCompile Include="..\Hardware-Layer\Motion.cpp" />
+    <ClCompile Include="..\Hardware-Layer\Mxtool.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Hardware-Layer\NTM_Control.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Hardware-Layer\sub.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\System\Common_Tool.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\System\ParameterFile.cpp" />
+    <ClCompile Include="..\System\ProcessThread_Main.cpp" />
+    <ClCompile Include="..\System\SxGroupBox.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\System\SystemClass.cpp" />
+    <ClCompile Include="..\System\XLAutomation.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\System\XLEzAutomation.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="btnenh.cpp" />
+    <ClCompile Include="comigraph.cpp" />
+    <ClCompile Include="dlgAutoRunInfo.cpp" />
+    <ClCompile Include="dlgData_MotionSpeed.cpp" />
+    <ClCompile Include="dlgData_MotionStatus.cpp" />
+    <ClCompile Include="dlgLightControl.cpp" />
+    <ClCompile Include="dlgManuAlign.cpp" />
+    <ClCompile Include="dlgManual_IO_Monitor.cpp" />
+    <ClCompile Include="dlgManuCenter.cpp" />
+    <ClCompile Include="dlgMarkCopy.cpp" />
+    <ClCompile Include="dlgModelLoad.cpp" />
+    <ClCompile Include="dlgModelNameInput.cpp" />
+    <ClCompile Include="dlgOrigin.cpp" />
+    <ClCompile Include="dlgPlateStamp_Jog.cpp" />
+    <ClCompile Include="dlgRecipePrintEdit.cpp" />
+    <ClCompile Include="dlgRecipeSet.cpp" />
+    <ClCompile Include="dlgRollForce_Test.cpp" />
+    <ClCompile Include="dlgSplash.cpp" />
+    <ClCompile Include="dlgStampInst_Jog.cpp" />
+    <ClCompile Include="dlgStopModeSel.cpp" />
+    <ClCompile Include="dlgXZ12_Mat.cpp" />
+    <ClCompile Include="font.cpp" />
+    <ClCompile Include="frmAlignView.cpp" />
+    <ClCompile Include="frmCalibView.cpp" />
+    <ClCompile Include="frmCameraView.cpp" />
+    <ClCompile Include="frmCompView.cpp" />
+    <ClCompile Include="frmDataView.cpp" />
+    <ClCompile Include="frmDebugView.cpp" />
+    <ClCompile Include="frmMainView.cpp" />
+    <ClCompile Include="frmManualView.cpp" />
+    <ClCompile Include="frmSetupView.cpp" />
+    <ClCompile Include="frmStampView.cpp" />
+    <ClCompile Include="frmSubMenuView.cpp" />
+    <ClCompile Include="frmTeachView.cpp" />
+    <ClCompile Include="frmTitleView.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MsgDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="surfacecolor.cpp" />
+    <ClCompile Include="textdescriptor.cpp" />
+    <ClCompile Include="texture.cpp" />
+    <ClCompile Include="Transfer_Control.cpp" />
+    <ClCompile Include="Transfer_ControlDoc.cpp" />
+    <ClCompile Include="Transfer_ControlView.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Transfer_Control.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\Common\Controls.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="..\Common\ControlsD.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="..\Common\ImageView\Lib\ImageObj.lib" />
+    <Library Include="..\Common\ImageView\Lib\ImageObjd.lib" />
+    <Library Include="..\Common\ImageView\Lib\XImageView.lib" />
+    <Library Include="..\Common\ImageView\Lib\XImageViewd.lib" />
+    <Library Include="..\Common\ImageView\Lib\XUtil.lib" />
+    <Library Include="..\Common\ImageView\Lib\XUtild.lib" />
+    <Library Include="..\Common\TP1121.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="..\Common\TP1121D.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="..\Hardware-Layer\ACSCL_x64.LIB">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="..\Hardware-Layer\ACSCL_x86.LIB">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="..\Hardware-Layer\Pcomm.lib" />
+    <Library Include="..\Hardware-Layer\UdpLibD.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Library>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Transfer_Control.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

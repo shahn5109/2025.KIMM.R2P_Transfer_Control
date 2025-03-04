@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<ArrayOfArrayOfArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ArrayOfArrayOfString>
+    <ArrayOfString>
+      <string>D:\Work\프로젝트\2018.10-KIMM-김재현박사-R2P Align기능 추가\프로그램\Transfer_Control\Transfer_Control\frmTitleView.cpp</string>
+      <string>D:\Work\프로젝트\2018.10-KIMM-김재현박사-R2P Align기능 추가\프로그램\Transfer_Control\Transfer_Control\frmTitleView.h</string>
+    </ArrayOfString>
+  </ArrayOfArrayOfString>
+</ArrayOfArrayOfArrayOfString>

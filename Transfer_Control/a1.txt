@@ -1,0 +1,30 @@
+typedef struct _RESULT_DATA
+{
+	int		iAlignEndFlag;
+
+	DPOINT	dptRealPoint_1st;
+	DPOINT	dptRealPoint_2nd;
+	DPOINT	dptPoint_1st;
+	DPOINT	dptPoint_2nd;
+
+	double	dTheta;					
+	double	dDistance;
+	//2X기준으로 데이터 저장
+	double  dPosData[_MAX_AXIS]; //
+}RESULT_DATA;
+double dStamp_Btm_2X_1st_Xpix, dStamp_Btm_2X_1st_Ypix;	//Roll또는 기타 얼라인 하부 픽셀 좌표
+double dStamp_Btm_20X_1st_Xpix, dStamp_Btm_20X_1st_Ypix;//Roll또는 기타 얼라인 하부 픽셀 좌표
+double dStamp_Btm_2X_2nd_Xpix, dStamp_Btm_2X_2nd_Ypix;//Roll또는 기타 얼라인 하부 픽셀 좌표
+double dStamp_Btm_20X_2nd_Xpix, dStamp_Btm_20X_2nd_Ypix;//Roll또는 기타 얼라인 하부 픽셀 좌표
+
+double dStamp_Top_20X_1st_Xpix, dStamp_Top_20X_1st_Ypix;//Roll대비 상부 얼라인 픽셀 좌표
+double dStamp_Top_20X_2nd_Xpix, dStamp_Top_20X_2nd_Ypix;//Roll대비 상부 얼라인 픽셀 좌표
+double dStamp_Top_2X_1st_Xpix, dStamp_Top_2X_1st_Ypix;//Roll대비 상부 얼라인 픽셀 좌표
+double dStamp_Top_2X_2nd_Xpix, dStamp_Top_2X_2nd_Ypix;//Roll대비 상부 얼라인 픽셀 좌표
+
+ParamFile()->Model_data.dStamp_Btm_2X_Xpix= posx1;
+ParamFile()->Model_data.dStamp_Btm_2X_Ypix= posy1;
+ParamFile()->Model_data.dStamp_Top_2X_Xpix= _INSP_IMAGE_SIZE_X-ParamFile()->Model_data.dStamp_Btm_2X_Xpix;
+ParamFile()->Model_data.dStamp_Top_2X_Ypix= posy1;
+
+

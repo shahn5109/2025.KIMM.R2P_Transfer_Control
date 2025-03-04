@@ -1,0 +1,751 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Common Control">
+      <UniqueIdentifier>{a77c25bb-2a6f-470c-9e71-1c94bbb9df90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hard-ware">
+      <UniqueIdentifier>{6690d9f3-472b-464d-b3bd-b7ca00e0f759}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{2d6fb3ad-7cd1-46c9-bf15-b145aa588e99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\FileReadWrite">
+      <UniqueIdentifier>{9c55ab47-a699-4b46-b820-6580cb4e0046}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common Control\ImageView">
+      <UniqueIdentifier>{f1b647f6-0fa9-429a-91f0-90dbf49e7890}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Etc">
+      <UniqueIdentifier>{03474dab-c376-4bed-b9cf-fa5571b95151}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hard-ware\Etc">
+      <UniqueIdentifier>{cc77ee4e-2ffc-496c-a7de-575fcd95e140}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common Control\Etc">
+      <UniqueIdentifier>{3e625bd0-a3b8-4842-a4b2-3f307f4c8655}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common Control\GridCtrl">
+      <UniqueIdentifier>{1c1aef7a-10ce-478d-a7e4-0a7c96bd7c2d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\buttons.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\filelarge.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\filesmall.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\main.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\writelarge.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\writesmall.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\ribbon.mfcribbon-ms">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Transfer_Control.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Transfer_ControlDoc.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Transfer_Control.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Toolbar256.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\CamSet1.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\111.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\bitmap3.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Cam1.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Cam0.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\icon1.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\icon2.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="Rev.txt" />
+    <None Include="aaa.txt" />
+    <None Include="a1.txt" />
+    <None Include="res\icon3.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="Buffer25.txt" />
+    <None Include="D-Buffer.txt" />
+    <None Include="Buffer26.txt" />
+    <None Include="..\Hardware-Layer\Cmmsdk.dll">
+      <Filter>Hard-ware\Etc</Filter>
+    </None>
+    <None Include="..\Hardware-Layer\UdpLibD.dll">
+      <Filter>Hard-ware\Etc</Filter>
+    </None>
+    <None Include="..\Hardware-Layer\UdpLibD.ilk">
+      <Filter>Hard-ware\Etc</Filter>
+    </None>
+    <None Include="..\Common\ImageView\ImageObjd.dll">
+      <Filter>Common Control\ImageView</Filter>
+    </None>
+    <None Include="..\Common\ImageView\XImageViewd.dll">
+      <Filter>Common Control\ImageView</Filter>
+    </None>
+    <None Include="res\icon4.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\ico00001.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\icon10.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\ico00002.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Transfer_Control.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Transfer_ControlDoc.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Transfer_ControlView.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\BCMenu.h">
+      <Filter>Common Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\BtnST.h">
+      <Filter>Common Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ComiAXCommon.h">
+      <Filter>Common Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\MultiViewSplitter.h">
+      <Filter>Common Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\MyMsgWnd.h">
+      <Filter>Common Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\MyProgressWnd.h">
+      <Filter>Common Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Mywnd.h">
+      <Filter>Common Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\UserDefine.h">
+      <Filter>Common Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Hardware-Layer\ACS_Motion.h">
+      <Filter>Hard-ware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Hardware-Layer\IO.h">
+      <Filter>Hard-ware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Hardware-Layer\Matrox.h">
+      <Filter>Hard-ware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Hardware-Layer\Motion.h">
+      <Filter>Hard-ware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Hardware-Layer\VisionInfo.h">
+      <Filter>Hard-ware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\System\LGE_Transfer_Define.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\System\ProcessThread_Main.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\System\SystemClass.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\System\SystemInfo.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\System\Define_Structure.h">
+      <Filter>System\FileReadWrite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\System\ParameterFile.h">
+      <Filter>System\FileReadWrite</Filter>
+    </ClInclude>
+    <ClInclude Include="btnenh.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="comigraph.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="font.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacecolor.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="textdescriptor.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="texture.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="dlgSplash.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="frmAlignView.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="frmCalibView.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="frmCameraView.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="frmDebugView.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="frmMainView.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="frmManualView.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="frmSetupView.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="frmSubMenuView.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="frmTeachView.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="frmTitleView.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="dlgManual_IO_Monitor.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="dlgData_MotionSpeed.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="dlgData_MotionStatus.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="frmDataView.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="dlgOrigin.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\System\KIMM_Transfer_Define.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="dlgManuAlign.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="dlgStopModeSel.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="dlgAutoRunInfo.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="dlgPlateStamp_Jog.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="frmStampView.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="dlgManuCenter.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="dlgMarkCopy.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="dlgModelLoad.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="dlgModelNameInput.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="dlgStampInst_Jog.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="dlgRecipeSet.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="dlgRecipePrintEdit.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ImageView\Include\export.h">
+      <Filter>Common Control\ImageView</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ImageView\Include\ImageObj.h">
+      <Filter>Common Control\ImageView</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ImageView\Include\IxDeviceContext.h">
+      <Filter>Common Control\ImageView</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ImageView\Include\xDataTypes.h">
+      <Filter>Common Control\ImageView</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ImageView\Include\xGraphicObject.h">
+      <Filter>Common Control\ImageView</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ImageView\Include\xGraphicPrimitive.h">
+      <Filter>Common Control\ImageView</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ImageView\Include\xImageScrollView.h">
+      <Filter>Common Control\ImageView</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ImageView\Include\xImageViewCtrl.h">
+      <Filter>Common Control\ImageView</Filter>
+    </ClInclude>
+    <ClInclude Include="..\System\Common_Tool.h">
+      <Filter>System\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\System\SxGroupBox.h">
+      <Filter>System\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\System\SxLogFont.h">
+      <Filter>System\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\System\XLAutomation.h">
+      <Filter>System\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Hardware-Layer\ACSC.h">
+      <Filter>Hard-ware\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Hardware-Layer\Cmmsdk.h">
+      <Filter>Hard-ware\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Hardware-Layer\CmmsdkDef.h">
+      <Filter>Hard-ware\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Hardware-Layer\ComiAXCommon.h">
+      <Filter>Hard-ware\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Hardware-Layer\ComiDaqComm.h">
+      <Filter>Hard-ware\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Hardware-Layer\Comizoa_Class.h">
+      <Filter>Hard-ware\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Hardware-Layer\Comm.h">
+      <Filter>Hard-ware\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Hardware-Layer\Mxtool.h">
+      <Filter>Hard-ware\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Hardware-Layer\NTM_Control.h">
+      <Filter>Hard-ware\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Hardware-Layer\Pcomm.h">
+      <Filter>Hard-ware\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\btnenh.h">
+      <Filter>Common Control\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\comigraph.h">
+      <Filter>Common Control\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Common_Tool.h">
+      <Filter>Common Control\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CtrlInclude.h">
+      <Filter>Common Control\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\OScopeCtrl.h">
+      <Filter>Common Control\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\RotTracker.h">
+      <Filter>Common Control\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TrackerInfo.h">
+      <Filter>Common Control\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Controls\GroupCheck.h">
+      <Filter>Common Control\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Controls\XPGroupBox.h">
+      <Filter>Common Control\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Hardware-Layer\CommProc.h">
+      <Filter>Hard-ware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Hardware-Layer\sub.h">
+      <Filter>Hard-ware\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="dlgXZ12_Mat.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="dlgRollForce_Test.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="dlgLightControl.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\GridCtrl_src\CellRange.h">
+      <Filter>Common Control\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\GridCtrl_src\GridCell.h">
+      <Filter>Common Control\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\GridCtrl_src\GridCellBase.h">
+      <Filter>Common Control\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\GridCtrl_src\GridCtrl.h">
+      <Filter>Common Control\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\GridCtrl_src\GridDropTarget.h">
+      <Filter>Common Control\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\GridCtrl_src\InPlaceEdit.h">
+      <Filter>Common Control\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\GridCtrl_src\MemDC.h">
+      <Filter>Common Control\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\GridCtrl_src\TitleTip.h">
+      <Filter>Common Control\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="frmCompView.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Transfer_Control.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Transfer_ControlDoc.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Transfer_ControlView.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\BCMenu.cpp">
+      <Filter>Common Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\BtnST.cpp">
+      <Filter>Common Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Common_Tool.cpp">
+      <Filter>Common Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\MultiViewSplitter.cpp">
+      <Filter>Common Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\MyMsgWnd.cpp">
+      <Filter>Common Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\MyProgressWnd.cpp">
+      <Filter>Common Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Mywnd.cpp">
+      <Filter>Common Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Hardware-Layer\ACS_Motion.cpp">
+      <Filter>Hard-ware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Hardware-Layer\IO.cpp">
+      <Filter>Hard-ware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Hardware-Layer\Matrox.cpp">
+      <Filter>Hard-ware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Hardware-Layer\Motion.cpp">
+      <Filter>Hard-ware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\System\ProcessThread_Main.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\System\SystemClass.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\System\ParameterFile.cpp">
+      <Filter>System\FileReadWrite</Filter>
+    </ClCompile>
+    <ClCompile Include="btnenh.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="comigraph.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="font.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="surfacecolor.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="textdescriptor.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="texture.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgSplash.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="frmAlignView.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="frmCalibView.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="frmCameraView.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="frmDebugView.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="frmMainView.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="frmManualView.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="frmSetupView.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="frmSubMenuView.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="frmTeachView.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="frmTitleView.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgManual_IO_Monitor.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgData_MotionSpeed.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgData_MotionStatus.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="frmDataView.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgOrigin.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgManuAlign.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgStopModeSel.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgAutoRunInfo.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgPlateStamp_Jog.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="frmStampView.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgManuCenter.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgMarkCopy.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgModelLoad.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgModelNameInput.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgStampInst_Jog.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgRecipeSet.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgRecipePrintEdit.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\System\Common_Tool.cpp">
+      <Filter>System\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\System\SxGroupBox.cpp">
+      <Filter>System\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\System\XLAutomation.cpp">
+      <Filter>System\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\System\XLEzAutomation.cpp">
+      <Filter>System\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Hardware-Layer\Cmmsdk.cpp">
+      <Filter>Hard-ware\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Hardware-Layer\Comizoa_Class.cpp">
+      <Filter>Hard-ware\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Hardware-Layer\Comm.c">
+      <Filter>Hard-ware\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Hardware-Layer\Mxtool.c">
+      <Filter>Hard-ware\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Hardware-Layer\NTM_Control.cpp">
+      <Filter>Hard-ware\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\btnenh.cpp">
+      <Filter>Common Control\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\comigraph.cpp">
+      <Filter>Common Control\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\OScopeCtrl.cpp">
+      <Filter>Common Control\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\RotTracker.cpp">
+      <Filter>Common Control\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Hardware-Layer\CommProc.cpp">
+      <Filter>Hard-ware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Hardware-Layer\sub.cpp">
+      <Filter>Hard-ware\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgXZ12_Mat.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgRollForce_Test.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgLightControl.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\GridCtrl_src\GridCell.cpp">
+      <Filter>Common Control\GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\GridCtrl_src\GridCellBase.cpp">
+      <Filter>Common Control\GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\GridCtrl_src\GridCtrl.cpp">
+      <Filter>Common Control\GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\GridCtrl_src\GridDropTarget.cpp">
+      <Filter>Common Control\GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\GridCtrl_src\InPlaceEdit.cpp">
+      <Filter>Common Control\GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\GridCtrl_src\TitleTip.cpp">
+      <Filter>Common Control\GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="frmCompView.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Transfer_Control.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\Hardware-Layer\ACSCL_x64.LIB">
+      <Filter>Hard-ware\Etc</Filter>
+    </Library>
+    <Library Include="..\Hardware-Layer\ACSCL_x86.LIB">
+      <Filter>Hard-ware\Etc</Filter>
+    </Library>
+    <Library Include="..\Hardware-Layer\UdpLibD.lib">
+      <Filter>Hard-ware\Etc</Filter>
+    </Library>
+    <Library Include="..\Common\Controls.lib">
+      <Filter>Common Control\Etc</Filter>
+    </Library>
+    <Library Include="..\Common\ControlsD.lib">
+      <Filter>Common Control\Etc</Filter>
+    </Library>
+    <Library Include="..\Common\TP1121.lib">
+      <Filter>Common Control\Etc</Filter>
+    </Library>
+    <Library Include="..\Common\TP1121D.lib">
+      <Filter>Common Control\Etc</Filter>
+    </Library>
+    <Library Include="..\Common\ImageView\Lib\ImageObj.lib">
+      <Filter>Common Control\ImageView</Filter>
+    </Library>
+    <Library Include="..\Common\ImageView\Lib\ImageObjd.lib">
+      <Filter>Common Control\ImageView</Filter>
+    </Library>
+    <Library Include="..\Common\ImageView\Lib\XImageView.lib">
+      <Filter>Common Control\ImageView</Filter>
+    </Library>
+    <Library Include="..\Common\ImageView\Lib\XImageViewd.lib">
+      <Filter>Common Control\ImageView</Filter>
+    </Library>
+    <Library Include="..\Common\ImageView\Lib\XUtil.lib">
+      <Filter>Common Control\ImageView</Filter>
+    </Library>
+    <Library Include="..\Common\ImageView\Lib\XUtild.lib">
+      <Filter>Common Control\ImageView</Filter>
+    </Library>
+    <Library Include="..\Hardware-Layer\Pcomm.lib">
+      <Filter>Hard-ware</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
